@@ -1,7 +1,7 @@
 <h1>
 <?php include 'formxuleenavalt.php';?>
 </h1>
-<form action="index.php" method="POST" >
+<form action="index.php?xaanaas=formphp" method="POST" >
     <h2>Calculator</h2>
     <input name="nomer1" type="number" placeholder="#1" required />
     <?php zugeerprintxiigeerei(); ?>
