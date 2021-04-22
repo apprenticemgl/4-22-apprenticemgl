@@ -1,142 +1,53 @@
 <?php
 
+function xoosonbish($field) {
+	if($field != "") {
+		return 1; //true
+	}
+	return 0; //false
+}
 
-// https://www.w3schools.com/php/php_operators.asp
+function zugeerprintxiigeerei() {
+	echo "<br>";
+}
 
-// $x = 10;  
-// $y = "10";
+/* printing out button html */
+function konop() {
+	echo '<button type="submit">Calculate</button>';
+}
 
-// echo $x != $y;
+function calculate($nom1, $nom2, $uildel) {
+	switch($uildel) {
+		case "apprenticemn@gmail.com":
+		case "i@apprentice.mn":
+		case "+":
+			return $nom1 + $nom2;
+		break;
+		case "-":
+			return $nom1 - $nom2;
+		break;
+		case "*":
+			return $nom1 * $nom2;
+		break;
+		case "/":
+			return $nom1 / $nom2;
+		break;
 
-
-// echo "<hr>";
-
-
-
-
-
-
-
-// https://www.w3schools.com/php/php_variables.asp
-
-$email = $_POST['email'];
-$name = $_POST['name'];
-$message = $_POST['message'];
-
-$oguulber = "Variables can store data of different types, and different data types can do different things.";
-
-// echo ($email);
-// echo "<br>";
-// echo strlen($email);
-// die();
-
-// strlen();
-
-switch ($email) {
-    case "apprenticemn@gmail.com":
-      echo "Apprentice Gmail bainaa";
-      break;
-    case "i@apprentice.mn":
-      echo "apprentice.mn email bainaa";
-      break;
-    case "":
-      echo "Email xayag xooson baina";
-      break;
-    default:
-      echo "emailiing shalgalt duuslaa";
-  }
-
-
-
-
-
-if(strlen($email) == 0) {
-    echo "Email xayag xooson baina";
-    echo "<br>";
-    die();
-} else if($name == "") {
-    echo "Ner xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
-} else if($message == "") {
-    echo "Message xooson baina";
-    echo "<br>";
-    die();
+		default:
+			return 'Aldaa';
+	}
+	return 'Mash tom aldaa';
 }
 
 
-
-
-
-
-// $formiin_medeelel = $_POST;
-// $email_hayag = $formiin_medeelel['email'];
-
-// print_r(   $email_hayag    );
-// echo "<hr>";
-// print_r( $formiin_medeelel );
-
-// [
-//     'email' => 'apprenticemn@gmail.com'
-//     'name' => 'Zerleg Design'
-//     'message' => 'lkadsjf lajdf lkajf kl'
-// ];
-
+if(isset($_GET['email'])) {
+    print_r($_GET['email']);
+}
+// print_r($_POST);
+if( xoosonbish($_POST['nomer1']) && xoosonbish($_POST['nomer2']) && xoosonbish($_POST['uildel'])) {
+    $hariu = calculate($_POST['nomer1'], $_POST['nomer2'], $_POST['uildel']);
+    if(xoosonbish($hariu)) {
+        echo $hariu;
+    }
+}
 ?>
-
-<!--
-<h1>
-    <?php
-        echo $oguulber;
-    ?>
-</h1>
--->
-
-<!--
-https://getbootstrap.com/docs/5.0/components/badge/#example
--->
-<h1>
-    <?php echo $name; ?> 
-    ( <span class="badge bg-secondary"><?php echo $email; ?></span> )
-</h1>
-<p><?php echo $message; ?></p>
