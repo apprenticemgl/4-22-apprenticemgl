@@ -9,11 +9,14 @@
     <title>Hello, world!</title>
   </head>
   <body>
+  <?php include 'helpers.php'; ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<?php include 'inputs.php'; ?>
 				<form action="index.php?xaanaas=index" method="POST">
+					<input type="password" name="password"/>
+					<?php hr(); ?>
 					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 					<label for="vehicle1"> I have a bike</label><br>
 					<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -21,8 +24,27 @@
 					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
 					<label for="vehicle3"> I have a boat</label>
 
-					
+					<?php hr(); ?>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="xuis" id="flexRadioDefault1" value="male">
+						<label class="form-check-label" for="flexRadioDefault1">
+							Male
+						</label>
+						</div>
+						<div class="form-check">
+						<input class="form-check-input" type="radio" name="xuis" id="flexRadioDefault2" value="female" checked>
+						<label class="form-check-label" for="flexRadioDefault2">
+							Female
+						</label>
+					</div>
 
+					<?php hr(); ?>
+					
+					<label for="customRange1" class="form-label">Example range</label>
+					<input type="range" class="form-range" id="customRange1">
+					
+					<?php hr(); ?>
+					
 					<input type="submit">
 				</form>
 			</div>
