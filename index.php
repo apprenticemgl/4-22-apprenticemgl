@@ -41,10 +41,10 @@
 					<?php hr(); ?>
 					
 					<label for="customRange1" class="form-label">Example range</label>
-					<input type="range" class="form-range" id="customRange1">
+					<input name="range" type="range" class="form-range" id="customRange1" min="0" max="10" step="0.5">
 					
 					<?php hr(); ?>
-					
+					<input name="xaanaas" value="index.php" type="hidden">
 					<input type="submit">
 				</form>
 			</div>
