@@ -15,6 +15,9 @@
 			<div class="col-12">
 				<?php include 'inputs.php'; ?>
 				<form action="index.php?xaanaas=index" method="POST">
+					<?php hr(); ?>
+					<textarea></textarea>
+					<?php hr(); ?>
 					<input type="password" name="password"/>
 					<?php hr(); ?>
 					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
